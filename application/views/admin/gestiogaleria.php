@@ -5,9 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gestió Galeria</title>
 
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/datepicker3.css" rel="stylesheet">
-<link href="css/styles.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.css'); ?>" >
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/datepicker3.css'); ?>" >
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/styles.css'); ?>" >
+<link href="<?php echo base_url('assets/css/bootstrap-table.css'); ?> " rel="stylesheet">
+
 
 <!--[if lt IE 9]>
 <script src="js/html5shiv.js"></script>
@@ -42,46 +45,7 @@
 		</div><!-- /.container-fluid -->
 	</nav>
 		
-	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
-		<form role="search">
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Search">
-			</div>
-		</form>
-		<ul class="nav menu">
-			<li><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
-			<li><a href="widgets.html"><span class="glyphicon glyphicon-th"></span> Widgets</a></li>
-			<li><a href="charts.html"><span class="glyphicon glyphicon-stats"></span> Charts</a></li>
-			<li><a href="tables.html"><span class="glyphicon glyphicon-list-alt"></span> Tables</a></li>
-			<li class="active"><a href="forms.html"><span class="glyphicon glyphicon-pencil"></span> Forms</a></li>
-			<li><a href="panels.html"><span class="glyphicon glyphicon-info-sign"></span> Alerts &amp; Panels</a></li>
-			<li class="parent ">
-				<a href="#">
-					<span class="glyphicon glyphicon-list"></span> Dropdown <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
-				</a>
-				<ul class="children collapse" id="sub-item-1">
-					<li>
-						<a class="" href="#">
-							<span class="glyphicon glyphicon-share-alt"></span> Sub Item 1
-						</a>
-					</li>
-					<li>
-						<a class="" href="#">
-							<span class="glyphicon glyphicon-share-alt"></span> Sub Item 2
-						</a>
-					</li>
-					<li>
-						<a class="" href="#">
-							<span class="glyphicon glyphicon-share-alt"></span> Sub Item 3
-						</a>
-					</li>
-				</ul>
-			</li>
-			<li role="presentation" class="divider"></li>
-			<li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Login Page</a></li>
-		</ul>
-		<div class="attribution">Template by <a href="http://www.medialoot.com/item/lumino-admin-bootstrap-template/">Medialoot</a></div>
-	</div><!--/.sidebar-->
+	<?php include ('menu.php'); ?>
 		
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
 		<div class="row">
@@ -125,13 +89,14 @@
 		
 	</div><!--/.main-->
 
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/chart.min.js"></script>
-	<script src="js/chart-data.js"></script>
-	<script src="js/easypiechart.js"></script>
-	<script src="js/easypiechart-data.js"></script>
-	<script src="js/bootstrap-datepicker.js"></script>
+<script src="<?php echo base_url('assets/js/jquery-1.11.1.min.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/chart.min.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/chart-data.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/easypiechart.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/easypiechart-data.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/bootstrap-datepicker.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/bootstrap-table.js'); ?>"></script>
 	<script>
 		!function ($) {
 			$(document).on("click","ul.nav li.parent > a > span.icon", function(){		  

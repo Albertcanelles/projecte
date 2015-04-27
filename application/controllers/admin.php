@@ -35,6 +35,18 @@ class Admin extends CI_Controller {
 			   echo 'registro insertado';
 	        }
 	    }
+	    function calendari(){					  //cambiar a inserir actualitat
+	            $this->load->view('admin/gestiocalendari');	        
+	    }
+	    function documents(){					  //cambiar a inserir actualitat
+	            $this->load->view('admin/gestiodocuments');	        
+	    }	
+	    function galeria(){					  //cambiar a inserir actualitat
+	            $this->load->view('admin/gestiogaleria');	        
+	    }	
+	    function usuaris(){					  //cambiar a inserir actualitat
+	            $this->load->view('admin/gestiousuaris');	        
+	    }	
 }
 
 ?>
